@@ -68,6 +68,28 @@
                     Focusable="False">
                 <Image Source="/BooksLibrary;component/Images/remove.ico" Style="{StaticResource ImageEnabled}" />
             </Button>
+            <Button Width="75"
+                    Height="22"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Command="{Binding SearchCommand}"
+                    Focusable="False">
+                Search
+            </Button>
+            <TextBox Width="200"
+                     Height="25"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Center"
+                     Text="{Binding TextToSearch, UpdateSourceTrigger=PropertyChanged}">
+            </TextBox>
+            <Button Width="75"
+                    Height="22"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Command="{Binding LoadDataCommand}"
+                    Focusable="False">
+                Load Data
+            </Button>
 
         </ToolBar>
 
